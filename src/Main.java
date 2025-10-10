@@ -25,7 +25,6 @@ public class Main {
             for (int c = 1; c < cols - 1; c++) {
                 if (grid[r].charAt(c) != 'A') continue;
 
-                // Collect diagonals
                 String diag1 = "" + grid[r - 1].charAt(c - 1)
                                  + grid[r].charAt(c)
                                  + grid[r + 1].charAt(c + 1);
@@ -189,6 +188,6 @@ String[] grid = {
 };
 
 
-        System.out.println("XMAS count: " + countXmas(grid)); // Expected 18
+        System.out.println("XMAS count: " + countXmas(grid));
     }
 }
